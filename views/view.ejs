@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles.css">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Blog Application</h1>
+  <ul>
+  <%for(var i=0;i<arrBName.length;i++){%>
+      <li><a href="/blog/<%= i %>"><%= arrBName[i]%></a></li>
+    <% }%>
+  </ul>
+  <a href="/">Back to home</a>
+</body>
+</html>
